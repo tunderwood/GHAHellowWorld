@@ -3,6 +3,7 @@ package org.tunderwood.GHAHelloWorld;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.MockedStatic;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -27,6 +28,12 @@ public class GHAHelloWorldTest {
     @Test
     public void testHello() {
         GHAHelloWorld.hello("MyName");
+        assertEquals("Hello MyName\n", outContent.toString());
+    }
+    @Test
+    public void testMain() {
+        String[] argArray = {"MyName"};
+        GHAHelloWorld.main(argArray);
         assertEquals("Hello MyName\n", outContent.toString());
     }
 }
