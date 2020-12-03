@@ -3,7 +3,6 @@ package org.tunderwood.GHAHelloWorld;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.MockedStatic;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
