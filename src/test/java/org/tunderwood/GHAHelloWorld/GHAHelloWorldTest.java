@@ -29,4 +29,10 @@ public class GHAHelloWorldTest {
         GHAHelloWorld.hello("MyName");
         assertEquals("Hello MyName\n", outContent.toString());
     }
+    @Test
+    public void testMain() {
+        String[] argArray = {"MyName"};
+        GHAHelloWorld.main(argArray);
+        assertEquals("Hello MyName\n", outContent.toString());
+    }
 }
