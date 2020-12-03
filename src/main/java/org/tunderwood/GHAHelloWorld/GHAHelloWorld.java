@@ -6,6 +6,9 @@ public class GHAHelloWorld {
     }
 
     public static void hello(String name) {
+        if(name.equals("CoP")){
+            System.out.println("Hello " + name +", Welcome to GitHub Actions!");
+        }
         System.out.println("Hello " + name);
     }
 }
